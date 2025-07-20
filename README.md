@@ -1,31 +1,75 @@
-# Testes Automatizados com Cypress - Avançado
+# 🧪 Cypress Avançado - Repositório de Curso
 
-👋 Seja bem vindo(a)!
+Este repositório é parte do conteúdo prático de um **curso avançado de testes automatizados com Cypress**.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+Aqui você vai encontrar os **exercícios, exemplos e arquivos de apoio** utilizados ao longo das aulas.  
+⚠️ **Este repositório não é um projeto de produção**, ele serve apenas como base de aprendizado.
 
-## O que você vai aprender
+---
 
-Durante o curso avançado de Cypress, você vai aprender:
+## 📁 Estrutura do Repositório
 
-- Como criar testes 100% _flakiness-free_
-- Como interagir com a aplicação o mais próximo de como um usuário real faria
-  - Como esperar por um elemento estar visível antes de interagir com ele
-  - Como simular o uso do teclado em vez de clique em botão em funcionalidades de busca
-  - Como esperar por requisições HTTP antes de seguir em frente com os testes
-- Como organizar diferentes testes em seus específicos contextos
-- Como ler o `localStorage` do navegador
-- Como tornar seletores de elementos mais específicos
-- Como simplificar comandos repetitivos
-- Como interceptar e mockar uma API externa para testar o frontend independente do backend
-- Como simular erros no servidor e na rede
-- Como simular lentidão na chamada à uma API
-- Como modificar o relatório de testes padrão para um que combine com o seu estilo 😉
+📦cypress-avancado
+├── cypress/
+│ ├── e2e/ # Testes organizados por aula
+│ ├── fixtures/ # Arquivos de dados usados nos testes
+│ ├── support/ # Comandos customizados e configs globais
+├── cypress.config.js # Configurações do Cypress
+├── package.json # Dependências do projeto
+└── README.md # Este arquivo
 
-## Vamos começar?
+yaml
+Copiar
+Editar
 
-Vá para a seção de [pré-requisitos](./lessons/0.md).
+---
 
-___
+## 🛠️ Como executar os testes localmente
 
-Um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+1. Clone o repositório
+2. Instale as dependências:
+
+```bash
+npm install
+Execute o Cypress com a interface gráfica:
+
+bash
+Copiar
+Editar
+npx cypress open
+Ou rode direto no terminal:
+
+bash
+Copiar
+Editar
+npx cypress run
+📌 Observações
+Os testes estão separados por lições, seguindo a ordem do curso.
+
+Alguns testes exigem simulações de API ou manipulação de requisições, tudo já preparado.
+
+O código está escrito de forma didática, com foco no entendimento, não na performance.
+
+📺 Curso em vídeo
+Este repositório acompanha um curso em vídeo, que explica cada detalhe do conteúdo presente aqui.
+Se você chegou até aqui por fora, considere assistir às aulas para aproveitar melhor os exemplos práticos.
+
+❓ Dúvidas ou suporte
+Se você estiver inscrito no curso, utilize o canal oficial da plataforma para tirar dúvidas.
+
+📜 Licença
+Este conteúdo é exclusivo para fins educacionais.
+Evite compartilhar fora dos canais oficiais do curso.
+
+css
+Copiar
+Editar
+
+Se quiser, posso adaptar o nome da pasta principal, colocar seu nome como autor, ou inserir links diretos para os arquivos das lições. Só avisar!
+
+
+
+
+
+
+
