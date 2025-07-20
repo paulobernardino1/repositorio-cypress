@@ -1,75 +1,82 @@
-# 🧪 Cypress Avançado - Repositório de Curso
+# Cypress Avançado - Repositório de Curso
 
-Este repositório é parte do conteúdo prático de um **curso avançado de testes automatizados com Cypress**.
+Este repositório contém material prático para aprendizado de testes automatizados com Cypress. Aqui você encontrará exercícios, exemplos e arquivos de apoio organizados didaticamente.
 
-Aqui você vai encontrar os **exercícios, exemplos e arquivos de apoio** utilizados ao longo das aulas.  
-⚠️ **Este repositório não é um projeto de produção**, ele serve apenas como base de aprendizado.
+> ⚠️ **Aviso**: Este repositório serve exclusivamente para fins educacionais e não deve ser considerado um projeto de produção.
 
----
+## Estrutura do Repositório
 
-## 📁 Estrutura do Repositório
-
-📦cypress-avancado
+```
 ├── cypress/
-│ ├── e2e/ # Testes organizados por aula
-│ ├── fixtures/ # Arquivos de dados usados nos testes
-│ ├── support/ # Comandos customizados e configs globais
-├── cypress.config.js # Configurações do Cypress
-├── package.json # Dependências do projeto
-└── README.md # Este arquivo
+│   ├── e2e/          # Testes organizados por aula
+│   ├── fixtures/     # Arquivos de dados usados nos testes
+│   └── support/      # Comandos customizados e configurações globais
+├── cypress.config.js # Arquivo de configuração do Cypress
+├── package.json      # Dependências do projeto
+└── README.md         # Documentação do projeto
+```
 
-yaml
-Copiar
-Editar
+## Pré-requisitos
 
----
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-## 🛠️ Como executar os testes localmente
+## Instalação
 
-1. Clone o repositório
+1. Clone o repositório:
+```bash
+git clone <url-do-repositorio>
+cd cypress-avancado
+```
+
 2. Instale as dependências:
-
 ```bash
 npm install
-Execute o Cypress com a interface gráfica:
+```
 
-bash
-Copiar
-Editar
+## Execução dos Testes
+
+### Interface Gráfica
+Para abrir o Cypress Test Runner:
+```bash
 npx cypress open
-Ou rode direto no terminal:
+```
 
-bash
-Copiar
-Editar
+### Modo Headless
+Para executar todos os testes no terminal:
+```bash
 npx cypress run
-📌 Observações
-Os testes estão separados por lições, seguindo a ordem do curso.
+```
 
-Alguns testes exigem simulações de API ou manipulação de requisições, tudo já preparado.
+### Executar testes específicos
+```bash
+npx cypress run --spec "cypress/e2e/aula-01/*.cy.js"
+```
 
-O código está escrito de forma didática, com foco no entendimento, não na performance.
+## Recursos Utilizados
 
-📺 Curso em vídeo
-Este repositório acompanha um curso em vídeo, que explica cada detalhe do conteúdo presente aqui.
-Se você chegou até aqui por fora, considere assistir às aulas para aproveitar melhor os exemplos práticos.
+- **Simulação de APIs**: Testes incluem interceptações e mocks já configurados
+- **Comandos customizados**: Implementações reutilizáveis para operações comuns
+- **Fixtures**: Dados de teste organizados em arquivos JSON
+- **Page Objects**: Padrão implementado para melhor manutenibilidade
 
-❓ Dúvidas ou suporte
-Se você estiver inscrito no curso, utilize o canal oficial da plataforma para tirar dúvidas.
+## Metodologia
 
-📜 Licença
-Este conteúdo é exclusivo para fins educacionais.
-Evite compartilhar fora dos canais oficiais do curso.
+O código foi desenvolvido com foco didático, priorizando:
 
-css
-Copiar
-Editar
+- ✅ Simplicidade e clareza
+- ✅ Comentários explicativos
+- ✅ Exemplos práticos
+- ✅ Boas práticas de automação
 
-Se quiser, posso adaptar o nome da pasta principal, colocar seu nome como autor, ou inserir links diretos para os arquivos das lições. Só avisar!
+## Suporte
 
+Para dúvidas sobre o conteúdo, consulte a documentação oficial do [Cypress](https://docs.cypress.io/).
 
+## Licença
 
+Este material é destinado exclusivamente para fins educacionais.
 
+---
 
-
-
+**Desenvolvido para aprendizado em Cypress** 🧪
